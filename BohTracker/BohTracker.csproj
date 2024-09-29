@@ -8,4 +8,21 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="BohDataMoodel">
+      <HintPath>..\..\BohDataMoodel\BohDataMoodel\bin\Release\net8.0\BohDataMoodel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiquidTechnologies.XmlObjects.Runtime" Version="20.7.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\BohDataMoodel\LiquidStudio\Documents\BohSys.xml">
+      <Link>XmlFiles\BohSys.xml</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
